@@ -10,20 +10,16 @@ BabyJS {
   Block = "{" Statement* "}"
   
   expression = term (_ ("+" | "-") _ term)*
-  
+
   term = factor (_ ("*" | "/") _ factor)*
   
   factor = number
          | identifier
-         | "(" expression ")"
+         | "(" expression ")"   -- parens
   
   identifier = letter (letter | digit)*
   
   number = digit+
-  
-  letter = "a".."z" | "A".."Z"
-  
-  digit = "0".."9"
   
   _ = whitespace*
   
