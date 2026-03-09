@@ -10,4 +10,8 @@ if (process.argv.length < 3) {
 const name = process.argv[2];
 const sourceCode = fs.readFileSync(name, "utf-8");
 const parseTree = parse(sourceCode);
-console.log(parseTree);
+if (parseTree.succeeded()) {
+  console.log("Parse succeeded!");
+} else {
+  console.error(parseTree);
+}
