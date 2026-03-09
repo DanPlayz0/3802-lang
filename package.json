@@ -1,0 +1,17 @@
+{
+  "name": "3802-lang",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/**/*.test.js"
+  },
+  "keywords": [
+    "compiler",
+    "interpreter",
+    "language"
+  ],
+  "author": "DanPlayz0",
+  "license": "ISC",
+  "description": "A simple compiler and interpreter for the 3802 programming language"
+}
